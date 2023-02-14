@@ -1,24 +1,35 @@
 :root {
-  --primary-color: #7f53ac;
+  --primary-color: #600eb3;
   --secondary-color: #f6f4f8;
   --third-color: #e8d9f7;
+  --main-color: #f7f7f7;
 }
 
-.body {
-  background: yellow;
+html {
+  height: 100%;
 }
 
-/*-=-=-=-=-= Menue bar -=-=-=-=-=*/
+body {
+  height: 100%;
+}
+
+/*========== Menue bar ==========*/
 
 .nav-bar {
   /*z-index: 10;*/
+  background: var(--main-color);
+  color: var(--primary-color);
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  font-weight: 400;
 }
 
 .nav-logo {
-  align-self: flex-start;
+  /*align-self: flex-start;*/
+  padding-left: 20px;
 }
 
 .nav-logo a {
@@ -26,10 +37,6 @@
   flex-direction: row;
   align-items: center;
   text-decoration: none;
-  font-size: 20px;
-  letter-spacing: 1.2px;
-  color: var(--primary-color);
-  font-weight: 400;
 }
 
 .nav-logo a img {
@@ -48,6 +55,7 @@
 
 .nav-link {
   display: block;
+  padding-right: 30px;
 }
 
 .nav-link.active {
@@ -103,8 +111,30 @@
   }
 }
 
-/*-=-=-=-=-= container -=-=-=-=-=*/
+/*========== container ==========*/
 
 .container {
-  background: linear-gradient(var(--secondary-color), var(--primary-color));
+  height: 100%;
+}
+
+/*========== footer ==========*/
+
+footer {
+  background: var(--secondary-color);
+  font-size: 12px;
+  color: #4f5758;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #4f5758;
+}
+
+footer a:hover {
+  color: var(--primary-color);
 }
