@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slideshow Gallery</title>
+    <link rel="icon" type="favicon.ico" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/gallery.css" />
+  </head>
+
+  <body>
+    <!-- Menu -->
+    <nav class="nav-bar">
+      <div class="nav-logo">
+        <a href="/">
+          <img src="/img/logo-48.png" alt="logo" />
+          <span>Painting Galary</span>
+        </a>
+      </div>
+      <button class="nav-menu-button">
+        <img src="/img/menu-30.png" alt="menu toggle icon" />
+      </button>
+      <div class="nav-link">
+        <ul>
+          <li><a href="/">Homepage</a></li>
+          <li><a href="/gallery.html">Photo</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Menu ended -->
+
+    <!-- slide -->
+    <div class="cover">
+      <h3 style="text-align: center">Some most azaming oil paiting</h3>
+
+      <div class="container">
+        <div class="slide">
+          <div class="slide-number">1 / 6</div>
+          <img src="/img/painting/hasani1.png" />
+        </div>
+
+        <div class="slide">
+          <div class="slide-number">2 / 6</div>
+          <img src="/img/painting/navesi1.jpg" />
+        </div>
+
+        <div class="slide">
+          <div class="slide-number">3 / 6</div>
+          <img src="/img/painting/navesi2.jpg" />
+        </div>
+
+        <div class="slide">
+          <div class="slide-number">4 / 6</div>
+          <img src="/img/painting/navesi3.jpg" />
+        </div>
+
+        <div class="slide">
+          <div class="slide-number">5 / 6</div>
+          <img src="/img/painting/navesi4.jpg" />
+        </div>
+
+        <div class="slide">
+          <div class="slide-number">6 / 6</div>
+          <img src="/img/painting/navesi5.jpg" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="container-caption">
+          <p id="caption"></p>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img
+              class="tile"
+              src="/img/painting/hasani1.png"
+              onclick="currentSlide(1)"
+              alt="The work of Reza Hasani"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="tile"
+              src="/img/painting/navesi1.jpg"
+              onclick="currentSlide(2)"
+              alt="The work of Rahim Navesi"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="tile"
+              src="/img/painting/navesi2.jpg"
+              onclick="currentSlide(3)"
+              alt="The work of Rahim Navesi"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="tile"
+              src="/img/painting/navesi3.jpg"
+              onclick="currentSlide(4)"
+              alt="The work of Rahim Navesi"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="tile"
+              src="/img/painting/navesi4.jpg"
+              onclick="currentSlide(5)"
+              alt="The work of Rahim Navesi"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="tile"
+              src="/img/painting/navesi5.jpg"
+              onclick="currentSlide(6)"
+              alt="The work of Rahim Navesi"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <p>
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/elham-estedlali-850a606b/"
+          target="_blank"
+        >
+          Elham Estedlali</a
+        >
+      </p>
+    </footer>
+    <script src="/src/gallery.js"></script>
+    <script src="/src/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cover {
+  background: linear-gradient(var(--secondary-color), var(--third-color));
+  min-height: calc(100% - 86px);
+  width: 100%;
+  position: absolute;
+}
+
+.container {
+  margin: 30px;
+}

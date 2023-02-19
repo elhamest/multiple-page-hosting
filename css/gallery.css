@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.cover {
+  background: linear-gradient(var(--secondary-color), var(--third-color));
+  min-height: calc(100% - 86px);
+  width: 100%;
+  position: absolute;
+}
+
+h3 {
+  letter-spacing: 1.2px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.container {
+  font-family: Arial;
+  max-width: 500px;
+  position: relative;
+  margin: 0 auto 50px;
+}
+
+/* Hide the images by default */
+
+.slide {
+  display: none;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  max-width: 100%;
+  max-height: auto;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background: #c4c3c6;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+
+.slide-number {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+
+.container-caption {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+
+.column {
+  float: left;
+  max-width: 16.66%;
+}
+
+.column img {
+  width: 84px;
+  height: 60px;
+}
+
+/* Add a transparency effect for thumnbail images */
+
+.tile {
+  opacity: 0.6;
+  cursor: pointer;
+  max-width: 100%;
+  margin: auto;
+}
+
+.active,
+.tile:hover {
+  opacity: 1;
+}

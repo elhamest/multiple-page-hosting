@@ -1,30 +1,17 @@
-:root {
-  --primary-color: #600eb3;
-  --secondary-color: #f6f4f8;
-  --third-color: #e8d9f7;
-  --main-color: #f7f7f7;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  height: 100%;
-}
-
 /*========== Menue bar ==========*/
 
 .nav-bar {
   /*z-index: 10;*/
-  background: var(--main-color);
+  background: var(--secondary-color);
   color: var(--primary-color);
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
   font-size: 20px;
   letter-spacing: 1.2px;
   font-weight: 400;
+  position: sticky;
 }
 
 .nav-logo {
@@ -53,10 +40,9 @@ body {
   top: 20px;
 }
 
-.nav-link {
+/*.nav-link {
   display: block;
-  padding-right: 30px;
-}
+}*/
 
 .nav-link.active {
   display: block;
@@ -81,7 +67,7 @@ body {
 .nav-link ul li a {
   font-size: 18px;
   font-weight: 400;
-  color: #7f53ac;
+  color: var(--primary-color);
   letter-spacing: 1.2px;
   padding: 10px 15px;
   text-decoration: none;
@@ -109,32 +95,4 @@ body {
     flex-direction: column;
     justify-content: flex-end;
   }
-}
-
-/*========== container ==========*/
-
-.container {
-  height: 100%;
-}
-
-/*========== footer ==========*/
-
-footer {
-  background: var(--secondary-color);
-  font-size: 12px;
-  color: #4f5758;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-footer a {
-  text-decoration: none;
-  color: #4f5758;
-}
-
-footer a:hover {
-  color: var(--primary-color);
 }

@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #600eb3;
+  --secondary-color: #f7f7f7;
+  --third-color: #e0dfe4;
+}
+
+/*========== footer ==========*/
+
+footer {
+  background: var(--secondary-color);
+  font-size: 12px;
+  color: #4f5758;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #4f5758;
+}
+
+footer a:hover {
+  color: var(--primary-color);
+}
