@@ -16,3 +16,8 @@ body {
 .container {
   margin: 30px;
 }
+
+h1 {
+  font-size: 25px;
+  color: var(--primary-color);
+}

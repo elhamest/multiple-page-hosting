@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slideshow Gallery</title>
+    <meta
+      name="description"
+      content="Painting Gallery is the wesite to introduce and order painting"
+    />
+    <title>Slideshow Gallery - Painting Galery</title>
     <link rel="icon" type="favicon.ico" href="/img/favicon.ico" />
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/menu.css" />
@@ -12,11 +16,14 @@
   </head>
 
   <body>
-    <!-- Menu -->
     <nav class="nav-bar">
       <div class="nav-logo">
         <a href="/">
-          <img src="/img/logo-48.png" alt="logo" />
+          <img
+            src="/img/logo-48.png"
+            alt="logo"
+            title="Homepage of Paiting Gallery"
+          />
           <span>Painting Galary</span>
         </a>
       </div>
@@ -25,9 +32,19 @@
       </button>
       <div class="nav-link">
         <ul>
-          <li><a href="/">Homepage</a></li>
-          <li><a href="/gallery.html">Photo</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li class="na-link-item">
+            <a href="/" title="Homepage of Paiting Gallery">Homepage</a>
+          </li>
+          <li class="na-link-item">
+            <a href="/gallery.html" title="Slideshow of Paiting Gallery"
+              >Photo</a
+            >
+          </li>
+          <li class="na-link-item">
+            <a href="/contact.html" title="Get in touch with Pating Gallery"
+              >Contact</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
@@ -35,41 +52,41 @@
 
     <!-- slide -->
     <div class="cover">
-      <h3 style="text-align: center">Some most azaming oil paiting</h3>
+      <h1>Some most azaming oil paiting</h1>
 
       <div class="container">
         <div class="slide">
           <div class="slide-number">1 / 6</div>
-          <img src="/img/painting/hasani1.png" />
+          <img src="/img/painting/hasani1.png" alt="Hasani's paiting" />
         </div>
 
         <div class="slide">
           <div class="slide-number">2 / 6</div>
-          <img src="/img/painting/navesi1.jpg" />
+          <img src="/img/painting/navesi1.jpg" alt="Navesi's paiting" />
         </div>
 
         <div class="slide">
           <div class="slide-number">3 / 6</div>
-          <img src="/img/painting/navesi2.jpg" />
+          <img src="/img/painting/navesi2.jpg" alt="Navesi's paiting" />
         </div>
 
         <div class="slide">
           <div class="slide-number">4 / 6</div>
-          <img src="/img/painting/navesi3.jpg" />
+          <img src="/img/painting/navesi3.jpg" alt="Navesi's paiting" />
         </div>
 
         <div class="slide">
           <div class="slide-number">5 / 6</div>
-          <img src="/img/painting/navesi4.jpg" />
+          <img src="/img/painting/navesi4.jpg" alt="Navesi's paiting" />
         </div>
 
         <div class="slide">
           <div class="slide-number">6 / 6</div>
-          <img src="/img/painting/navesi5.jpg" />
+          <img src="/img/painting/navesi5.jpg" alt="Navesi's paiting" />
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+        <a class="prev" onclick="plusSlides(-1)" title="Previous paiting">❮</a>
+        <a class="next" onclick="plusSlides(1)" title="Next paiting">❯</a>
 
         <div class="container-caption">
           <p id="caption"></p>
@@ -134,6 +151,7 @@
         <a
           href="https://www.linkedin.com/in/elham-estedlali-850a606b/"
           target="_blank"
+          title="Elham Estedlali"
         >
           Elham Estedlali</a
         >

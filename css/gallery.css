@@ -11,8 +11,10 @@ body {
   position: absolute;
 }
 
-h3 {
-  letter-spacing: 1.2px;
+h1 {
+  font-size: 25px;
+  text-align: center;
+  color: var(--primary-color);
 }
 
 img {
